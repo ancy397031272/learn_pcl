@@ -20,6 +20,12 @@ main(int argc,char** argv)
         std::cout<<"    "<<cloud->points[i].x
                 <<" "<<cloud->points[i].y
                <<" "<<cloud->points[i].z<<std::endl;
+    pcl::visualization::CloudViewer viewer("Simple Cloud Viewer");
+    viewer.showCloud(cloud);
+    while(!viewer.wasStopped())
+    {
+
+    }
 
     return(0);
 }
