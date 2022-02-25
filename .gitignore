@@ -1,3 +1,13 @@
+bin/
+Build/
+build/
+.idea
+
+CMakeFiles/
+CMakeCache.txt
+cmake-build-debug/
+cmake-build-release/
+
 # Prerequisites
 *.d
 
