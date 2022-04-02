@@ -11,7 +11,7 @@
 
 namespace py = pybind11;
 
-int showpcd(py::array_t<double> &input1) {
+int showPCD(py::array_t<double> &input1) {
   py::buffer_info buf1 = input1.request();
 
   double *ptr1 = (double *)buf1.ptr; //指针访问读写 numpy.ndarray
@@ -68,5 +68,5 @@ int showpcd(py::array_t<double> &input1) {
 PYBIND11_MODULE(example, m) {
 
   m.doc() = "get pcd from python!";
-  m.def("showpcd", &showpcd);
+  m.def("showPCD", &showPCD);
 }
